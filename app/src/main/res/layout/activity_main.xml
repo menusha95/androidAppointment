@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.menusha.appointmentmanager.MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+
+        android:text="Create Appointment"
+        android:layout_width="200dp"
+        android:layout_below="@+id/calendarView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+
+        android:id="@+id/appbutton"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:layout_height="35dp"
+
+        android:onClick="appbutton" />
+
+
+    <Button
+        android:text="View/Edit"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnView"
+        android:background="@android:color/white"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/appbutton"
+        android:layout_alignStart="@+id/appbutton" />
+
+    <Button
+        android:text="Delete "
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/btnDelete"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/btnView"
+        android:layout_alignStart="@+id/btnView" />
+
+    <Button
+        android:text="Move"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/button7"
+        android:background="@android:color/background_light"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/btnDelete"
+        android:layout_alignStart="@+id/btnDelete" />
+
+    <Button
+        android:text="Search"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:id="@+id/searchButton"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calendarView"
+        android:layout_toStartOf="@+id/appbutton"
+        android:id="@+id/displayDate"
+        android:layout_alignEnd="@+id/calendarView"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

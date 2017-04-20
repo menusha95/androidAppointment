@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:elevation="19dp">
+
+
+        <Button
+
+            android:text="Done"
+            android:layout_width="100dp"
+            android:id="@+id/btnSave"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:layout_height="40dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginEnd="37dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="onClick"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateText"
+            android:textSize="24sp"
+            android:hint="Title"
+            android:layout_marginTop="26dp"
+            android:textStyle="normal|bold"
+            android:layout_alignParentTop="true"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeText"
+            android:layout_marginTop="17dp"
+            android:layout_marginStart="75dp"
+            android:layout_below="@+id/dateText"
+            tools:elevation="2dp"
+            android:elevation="24dp"
+            android:fontFamily="sans-serif"
+            android:textSize="24sp"
+            android:textStyle="normal|bold" />
+
+        <Button
+
+            android:text="Time"
+            android:layout_width="60dp"
+
+            android:id="@+id/btnTime"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/background_light"
+            android:layout_height="30dp"
+
+            android:layout_alignTop="@+id/timeText"
+            android:layout_alignParentStart="true" />
+
+
+        <EditText
+            android:id="@+id/editDes"
+            android:lines="8"
+            android:minLines="6"
+            android:gravity="top|left"
+            android:maxLines="10"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/editTitle"
+            android:layout_alignParentStart="true"
+            android:hint="Description goes here"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="?attr/actionModeSplitBackground" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTitle"
+            android:hint="Title goes here"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/btnTime"
+            android:layout_alignParentStart="true" />
+
+
+    </RelativeLayout>
+</LinearLayout>

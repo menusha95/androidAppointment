@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/saveEdit"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:hint="Enter Name here"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        tools:backgroundTintMode="add" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:id="@+id/btnDelete"
+        android:textSize="14sp"
+        android:layout_below="@+id/saveEdit"
+        android:layout_toStartOf="@+id/btnSave"
+        android:layout_marginEnd="21dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="47dp"
+        android:id="@+id/btnSave"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_alignEnd="@+id/saveEdit" />
+</RelativeLayout>
+
+
+
+</LinearLayout>
